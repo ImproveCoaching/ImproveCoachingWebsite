@@ -177,6 +177,7 @@ footer {
 }
 
 main {
+    position: relative;
     margin: 20px 0px;
     display: flex;
     flex-direction: column;
@@ -189,6 +190,15 @@ main span {
 #Advies {
     background-color: var(--secondary-background-color);
     color: var(--dark-color);
+}
+
+#Content-Drawer {
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
 }
 
 footer {

@@ -40,3 +40,80 @@ deskundigButton.addEventListener('click', () => {
     adviesButton.parentElement.classList.remove('active');
     deskundigButton.parentElement.classList.add('active');
 });
+
+const coachingNav = document.getElementById('Coaching-Nav');
+const adviesNav = document.getElementById('Advies-Nav');
+const deskundigNav = document.getElementById('Deskundigheidsbevordering-Nav');
+
+const contentDrawer = document.getElementById('Content-Drawer');
+const coachingDrawer = document.getElementById('Coaching-Drawer');
+const adviesDrawer = document.getElementById('Advies-Drawer');
+const deskundigDrawer = document.getElementById('Deskundigheidsbevordering-Drawer');
+
+contentDrawer.classList.add('hidden');
+coachingDrawer.classList.add('hidden');
+adviesDrawer.classList.add('hidden');
+deskundigDrawer.classList.add('hidden');
+
+coachingNav.addEventListener('click', () => {
+    if(coachingNav.classList.contains('active')) {
+        contentDrawer.classList.add('hidden');
+        coachingDrawer.classList.add('hidden');
+        adviesDrawer.classList.add('hidden');
+        deskundigDrawer.classList.add('hidden');
+        coachingNav.classList.remove('active');
+        adviesNav.classList.remove('active');
+        deskundigNav.classList.remove('active');
+    }
+    else {
+        contentDrawer.classList.remove('hidden');
+        coachingDrawer.classList.remove('hidden');
+        adviesDrawer.classList.add('hidden');
+        deskundigDrawer.classList.add('hidden');
+        coachingNav.classList.add('active');
+        adviesNav.classList.remove('active');
+        deskundigNav.classList.remove('active');
+    }
+});
+
+adviesNav.addEventListener('click', () => {
+    if(adviesNav.classList.contains('active')) {
+        contentDrawer.classList.add('hidden');
+        coachingDrawer.classList.add('hidden');
+        adviesDrawer.classList.add('hidden');
+        deskundigDrawer.classList.add('hidden');
+        coachingNav.classList.remove('active');
+        adviesNav.classList.remove('active');
+        deskundigNav.classList.remove('active');
+    }
+    else {
+        contentDrawer.classList.remove('hidden');
+        coachingDrawer.classList.add('hidden');
+        adviesDrawer.classList.remove('hidden');
+        deskundigDrawer.classList.add('hidden');
+        coachingNav.classList.remove('active');
+        adviesNav.classList.add('active');
+        deskundigNav.classList.remove('active');
+    }
+});
+
+deskundigNav.addEventListener('click', () => {
+    if(deskundigNav.classList.contains('active')) {
+        contentDrawer.classList.add('hidden');
+        coachingDrawer.classList.add('hidden');
+        adviesDrawer.classList.add('hidden');
+        deskundigDrawer.classList.add('hidden');
+        coachingNav.classList.remove('active');
+        adviesNav.classList.remove('active');
+        deskundigNav.classList.remove('active');
+    }
+    else {
+        contentDrawer.classList.remove('hidden');
+        coachingDrawer.classList.add('hidden');
+        adviesDrawer.classList.add('hidden');
+        deskundigDrawer.classList.remove('hidden');
+        coachingNav.classList.remove('active');
+        adviesNav.classList.remove('active');
+        deskundigNav.classList.add('active');
+    }
+});
