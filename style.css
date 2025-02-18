@@ -15,6 +15,7 @@
     src: url(./assets/fonts/Roboto-Regular.ttf) format('truetype');
 }
 
+
 :root {
     --primary-background-color: #e1b7b6;
     --secondary-background-color: #f9beb7;
@@ -40,7 +41,12 @@ h1 {
     font-size: 64pt;
 }
 
+h2 {
+    font-family: 'OpenSans-Bold';
+}
+
 h3 {
+    font-family: 'OpenSans-Bold';
     font-weight: 600;
 }
 
@@ -335,4 +341,16 @@ button {
 
 .custom-border-bottom {
     border-bottom: 2px solid var(--secondary-color);
+}
+
+.methodiek-container {
+    margin-top: 50px;
+}
+
+.quote-subtitle {
+    margin-top: 10px;
+    width: 100%;
+    text-align: right;
+    color: #777;
+    font-style: italic;
 }
