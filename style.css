@@ -23,7 +23,7 @@
     --secondary-color: #233e2b;
     --accent-color: #6ab1aa;
     --accent-color-yellow: #FDB84F;
-    --dark-color: #000;
+    --dark-color: #333;
     --light-color: #fff;
 }
 
@@ -60,8 +60,9 @@ nav {
     border-bottom: solid 20px var(--primary-background-color);
 }
 
-#Advies,
 #CallToAction,
+#Missie,
+#Testimonials,
 header,
 footer {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -193,7 +194,8 @@ main span {
     padding: 50px 0px;
 }
 
-#Advies {
+#Missie,
+#Testimonials {
     background-color: var(--secondary-background-color);
     color: var(--dark-color);
 }
