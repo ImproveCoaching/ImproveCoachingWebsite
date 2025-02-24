@@ -257,7 +257,8 @@ footer {
     padding-top: 40px;
     margin: 20px 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-top: 2px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
 }
 
 #CallToAction {
