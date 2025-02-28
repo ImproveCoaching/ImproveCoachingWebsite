@@ -17,9 +17,9 @@
 
 
 :root {
-    --primary-background-color: #e1b7b6;
-    --secondary-background-color: #f9beb7;
-    --primary-color: #f9beb7;
+    --primary-background-color: #ea9abe;
+    --secondary-background-color: #f4accc;
+    --primary-color: #ffc7c1;
     --secondary-color: #233e2b;
     --accent-color: #6ab1aa;
     --accent-color-yellow: #FDB84F;
@@ -46,6 +46,11 @@ h2 {
 }
 
 h3 {
+    font-family: 'OpenSans-Bold';
+    font-weight: 600;
+}
+
+h4 {
     font-family: 'OpenSans-Bold';
     font-weight: 600;
 }
