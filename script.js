@@ -117,3 +117,26 @@ deskundigNav.addEventListener('click', () => {
         deskundigNav.classList.add('active');
     }
 });
+
+const carouselLeft = document.getElementById("carouselLeft");
+const carouselRight = document.getElementById("carouselRight");
+const carouselContent = document.getElementById("carouselContent");
+
+let carouselIndex = 0;
+const carouselElements = [3];
+
+const coachingRoot = document.createElement("div");
+const adviesRoot = document.createElement("div");
+const deskundigheidRoot = document.createElement("div");
+
+const content0 = document.createElement("p").innerHTML("Hello world 1!");
+const content1 = document.createElement("p").innerHTML("Hello world 2!");
+const content2 = document.createElement("p").innerHTML("Hello world 3!");
+
+coachingRoot.appendChild(content0);
+adviesRoot.appendChild(content0);
+deskundigheidRoot.appendChild(content1);
+
+// Initialize carousel content
+// Initialize  the carousel content
+// Add carousel navigation
