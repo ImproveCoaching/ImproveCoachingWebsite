@@ -6,6 +6,12 @@
 }
 
 @font-face {
+    font-family: 'OpenSans';
+    src: url(./assets/fonts/OpenSans.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Quickbrush';
     src: url("./assets/fonts/Quickbrush.otf") format('opentype');
 }
@@ -17,8 +23,8 @@
 
 
 :root {
-    --primary-background-color: #ea9abe;
-    --secondary-background-color: #f4accc;
+    --primary-background-color: #fa8dadc7;
+    --secondary-background-color: #fa8dadb0;
     --primary-color: #ffc7c1;
     --secondary-color: #233e2b;
     --accent-color: #6ab1aa;
@@ -55,6 +61,17 @@ h4 {
     font-weight: 600;
 }
 
+h5 {
+    font-family: 'OpenSans';
+    color: #333;
+}
+
+p,
+li {
+    font-family: 'Roboto';
+    font-size: 14pt;
+}
+
 header {
     color: var(--light-color);
     background-color: var(--primary-background-color);
@@ -67,7 +84,6 @@ nav {
 
 #CallToAction,
 #Missie,
-#Diensten,
 header,
 .section-banner,
 footer {
@@ -202,7 +218,7 @@ main span {
 }
 
 #Missie,
-#Diensten {
+#Advies {
     background-color: var(--secondary-background-color);
     color: var(--dark-color);
 }
