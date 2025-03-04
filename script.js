@@ -56,65 +56,65 @@ adviesDrawer.classList.add('hidden');
 deskundigDrawer.classList.add('hidden');
 
 coachingNav.addEventListener('click', () => {
-    if(coachingNav.classList.contains('active')) {
+    if(coachingNav.classList.contains('active-nav')) {
         contentDrawer.classList.add('hidden');
         coachingDrawer.classList.add('hidden');
         adviesDrawer.classList.add('hidden');
         deskundigDrawer.classList.add('hidden');
-        coachingNav.classList.remove('active');
-        adviesNav.classList.remove('active');
-        deskundigNav.classList.remove('active');
+        coachingNav.classList.remove('active-nav');
+        adviesNav.classList.remove('active-nav');
+        deskundigNav.classList.remove('active-nav');
     }
     else {
         contentDrawer.classList.remove('hidden');
         coachingDrawer.classList.remove('hidden');
         adviesDrawer.classList.add('hidden');
         deskundigDrawer.classList.add('hidden');
-        coachingNav.classList.add('active');
-        adviesNav.classList.remove('active');
-        deskundigNav.classList.remove('active');
+        coachingNav.classList.add('active-nav');
+        adviesNav.classList.remove('active-nav');
+        deskundigNav.classList.remove('active-nav');
     }
 });
 
 adviesNav.addEventListener('click', () => {
-    if(adviesNav.classList.contains('active')) {
+    if(adviesNav.classList.contains('active-nav')) {
         contentDrawer.classList.add('hidden');
         coachingDrawer.classList.add('hidden');
         adviesDrawer.classList.add('hidden');
         deskundigDrawer.classList.add('hidden');
-        coachingNav.classList.remove('active');
-        adviesNav.classList.remove('active');
-        deskundigNav.classList.remove('active');
+        coachingNav.classList.remove('active-nav');
+        adviesNav.classList.remove('active-nav');
+        deskundigNav.classList.remove('active-nav');
     }
     else {
         contentDrawer.classList.remove('hidden');
         coachingDrawer.classList.add('hidden');
         adviesDrawer.classList.remove('hidden');
         deskundigDrawer.classList.add('hidden');
-        coachingNav.classList.remove('active');
-        adviesNav.classList.add('active');
-        deskundigNav.classList.remove('active');
+        coachingNav.classList.remove('active-nav');
+        adviesNav.classList.add('active-nav');
+        deskundigNav.classList.remove('active-nav');
     }
 });
 
 deskundigNav.addEventListener('click', () => {
-    if(deskundigNav.classList.contains('active')) {
+    if(deskundigNav.classList.contains('active-nav')) {
         contentDrawer.classList.add('hidden');
         coachingDrawer.classList.add('hidden');
         adviesDrawer.classList.add('hidden');
         deskundigDrawer.classList.add('hidden');
-        coachingNav.classList.remove('active');
-        adviesNav.classList.remove('active');
-        deskundigNav.classList.remove('active');
+        coachingNav.classList.remove('active-nav');
+        adviesNav.classList.remove('active-nav');
+        deskundigNav.classList.remove('active-nav');
     }
     else {
         contentDrawer.classList.remove('hidden');
         coachingDrawer.classList.add('hidden');
         adviesDrawer.classList.add('hidden');
         deskundigDrawer.classList.remove('hidden');
-        coachingNav.classList.remove('active');
-        adviesNav.classList.remove('active');
-        deskundigNav.classList.add('active');
+        coachingNav.classList.remove('active-nav');
+        adviesNav.classList.remove('active-nav');
+        deskundigNav.classList.add('active-nav');
     }
 });
 
