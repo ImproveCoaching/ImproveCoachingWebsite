@@ -518,7 +518,87 @@ input[type="submit"] {
     margin: auto 0px;
 }
 
-/* For medium screens (>=768px) */
-@media (min-width: 768px) {
+#navButton {
+    display: none;
+}
 
+/* For medium screens (>=768px) */
+@media (min-width: 768px) {}
+
+@media (max-width: 767px) {
+
+    h1 {
+        font-size: 48pt;
+    }
+
+    .about-image {
+        margin-top: 50px;
+    }
+
+    .subtitle {
+        transform: translateX(64px) translateY(-50px);
+        font-size: 28pt;
+    }
+
+    .header-socials-container {
+        display: none;
+    }
+
+    .header-title-container {
+        padding-left: 0px;
+        height: 140px;
+    }
+
+    .nav-row {
+        display: grid;
+        grid-template-columns: auto auto 1fr; /* Home | Flexible space | Contact */
+        grid-template-rows: auto min-content; /* Two rows */
+        gap: 0px;
+    }
+
+    .primary-nav-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / -1;
+    }
+
+    .contact-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        grid-row: 1;
+        grid-column: 2;
+        margin-left: 20px;
+    }
+
+    .carousel-inner {
+        padding: 0px 20px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        transform: translateY(50px);
+        margin-bottom: 0px;
+    }
+
+    #navButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    #navButton button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+    }
+
+    .mobile-hidden {
+        display: none !important;
+    }
 }

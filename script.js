@@ -118,24 +118,36 @@ deskundigNav.addEventListener('click', () => {
     }
 });
 
-const carouselLeft = document.getElementById("carouselLeft");
-const carouselRight = document.getElementById("carouselRight");
-const carouselContent = document.getElementById("carouselContent");
+const pNavContainer = document.getElementById('pNavContainer');
+const navMenuButton = document.getElementById('navMenuButton');
 
-let carouselIndex = 0;
-const carouselElements = [3];
+navMenuButton.addEventListener('click', () => {
+    if(pNavContainer.classList.contains('mobile-hidden')) {
+        pNavContainer.classList.remove('mobile-hidden');
+    }
+    else {
+        pNavContainer.classList.add('mobile-hidden');
+    }
+});
 
-const coachingRoot = document.createElement("div");
-const adviesRoot = document.createElement("div");
-const deskundigheidRoot = document.createElement("div");
+// const carouselLeft = document.getElementById("carouselLeft");
+// const carouselRight = document.getElementById("carouselRight");
+// const carouselContent = document.getElementById("carouselContent");
 
-const content0 = document.createElement("p").innerHTML("Hello world 1!");
-const content1 = document.createElement("p").innerHTML("Hello world 2!");
-const content2 = document.createElement("p").innerHTML("Hello world 3!");
+// let carouselIndex = 0;
+// const carouselElements = [3];
 
-coachingRoot.appendChild(content0);
-adviesRoot.appendChild(content0);
-deskundigheidRoot.appendChild(content1);
+// const coachingRoot = document.createElement("div");
+// const adviesRoot = document.createElement("div");
+// const deskundigheidRoot = document.createElement("div");
+
+// const content0 = document.createElement("p").innerHTML("Hello world 1!");
+// const content1 = document.createElement("p").innerHTML("Hello world 2!");
+// const content2 = document.createElement("p").innerHTML("Hello world 3!");
+
+// coachingRoot.appendChild(content0);
+// adviesRoot.appendChild(content0);
+// deskundigheidRoot.appendChild(content1);
 
 // Initialize carousel content
 // Initialize  the carousel content
