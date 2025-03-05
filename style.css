@@ -511,6 +511,12 @@ input[type="submit"] {
     padding: 0px 80px;
 }
 
+.carousel-controls {
+    max-width: 1300px;
+    position: absolute;
+    top: 50%;
+}
+
 .carousel-control-next,
 .carousel-control-prev {
     width: 64px;
@@ -529,6 +535,11 @@ input[type="submit"] {
 
     h1 {
         font-size: 48pt;
+    }
+
+    .rel-col img {
+        position: static;
+        height: 500px;
     }
 
     .about-image {
@@ -578,7 +589,7 @@ input[type="submit"] {
 
     .carousel-control-next,
     .carousel-control-prev {
-        transform: translateY(50px);
+        position: static;
         margin-bottom: 0px;
     }
 
@@ -600,5 +611,13 @@ input[type="submit"] {
 
     .mobile-hidden {
         display: none !important;
+    }
+
+    .carousel-controls {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
     }
 }
