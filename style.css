@@ -23,8 +23,8 @@
 
 
 :root {
-    --primary-background-color: #fa8dadb0;
-    --secondary-background-color: #fa8dadb0;
+    --primary-background-color: #f1b4c6;
+    --secondary-background-color: #f1b4c6;
     --primary-color: #ffc7c1;
     --secondary-color: #233e2b;
     --accent-color: #6ab1aa;
@@ -84,6 +84,7 @@ nav {
 
 #CallToAction,
 #Missie,
+#Content-Drawer
 header,
 .section-banner,
 footer {
@@ -232,7 +233,7 @@ main span {
 }
 
 #Content-Drawer {
-    position: absolute;
+    position: relative;
     top: -40px;
     width: 100%;
     z-index: 100;
@@ -528,6 +529,10 @@ input[type="submit"] {
     display: none;
 }
 
+#Content-Drawer h3{
+    margin-bottom: 30px;
+}
+
 /* For medium screens (>=768px) */
 @media (min-width: 768px) {}
 
@@ -619,5 +624,9 @@ input[type="submit"] {
         flex-direction: row;
         justify-content: center;
         gap: 40px;
+    }
+
+    .quote-card h5 {
+        font-size: 14pt;
     }
 }
