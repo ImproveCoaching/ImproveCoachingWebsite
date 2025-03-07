@@ -629,4 +629,8 @@ input[type="submit"] {
     .quote-card h5 {
         font-size: 14pt;
     }
+
+    .footer-info-container p {
+        font-size: 10pt !important;
+    }
 }
