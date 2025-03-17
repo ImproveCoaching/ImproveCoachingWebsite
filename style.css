@@ -633,4 +633,8 @@ input[type="submit"] {
     .footer-info-container p {
         font-size: 10pt !important;
     }
+
+    form .row {
+        gap: 20px;
+    }
 }
