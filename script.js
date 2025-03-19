@@ -152,3 +152,22 @@ navMenuButton.addEventListener('click', () => {
 // Initialize carousel content
 // Initialize  the carousel content
 // Add carousel navigation
+
+const messageContainer = document.getElementById('messageContainer');
+const searchParams = new URLSearchParams(window.location.search);
+const contactStatus = searchParams.get('status');
+if(contactStatus) {
+    const messageContent = document.getElementById('messageContainerContent');
+    if(contactStatus === 'success') {
+        messageContent.innerHTML = 'Uw bericht is succesvol verzonden!';
+    }
+    else {
+        messageContent.innerHTML = 'Er is iets fout gegaan. Probeer het later opnieuw.';
+    }
+    messageContainer.classList.remove('hidden');
+}
+
+const closeMessageButton = document.getElementById('messageContainerClose');
+closeMessageButton.addEventListener('click', () => {
+    messageContainer.classList.add('hidden');
+});

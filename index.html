@@ -13,6 +13,12 @@
 
 <body>
     <header>
+        <div class="hidden" id="messageContainer">
+            <div>
+                <p id="messageContainerContent">Message Content</p>
+                <a id="messageContainerClose"><i class="material-icons">close</i></a>
+            </div>
+        </div>
         <div class="container">
             <div class="row header-title-container">
                 <div class="col-md-8">
@@ -173,8 +179,8 @@
                 <h3>WAT ANDEREN ZEGGEN</h3>
             </div>
             <div class="container">
-                <div class="row g-4 justify-content-center">
-                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="row g-4 justify-content-center pos-relative">
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row align-center">
@@ -342,21 +348,21 @@
                         <p>Neem gerust contact op voor een vrijblijvend gesprek of advies.</p>
                     </div>
                 </div>
-                <form>
+                <form action="contact.php" method="post">
                     <div class="row">
                         <div class="col-md-6">
                             <label for="contactNaam" class="form-label">Naam</label>
-                            <input type="text" class="form-control" id="contactNaam" aria-describedby="emailHelp">
+                            <input type="text" class="form-control" id="contactNaam" name="name" aria-describedby="emailHelp" required>
                         </div>
                         <div class="col-md-6">
                             <label for="contactEmail" class="form-label">E-mail adres</label>
-                            <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="contactEmail" name="email" aria-describedby="emailHelp" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <label for="contactBericht" class="form-label">Bericht</label>
-                            <textarea class="form-control" id="contactBericht"></textarea>
+                            <textarea class="form-control" id="contactBericht" name="message" required></textarea>
                         </div>
                     </div>
                     <div class="row">

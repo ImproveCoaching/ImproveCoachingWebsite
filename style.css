@@ -533,6 +533,36 @@ input[type="submit"] {
     margin-bottom: 30px;
 }
 
+.pos-relative {
+    position: relative;
+}
+
+#messageContainer {
+    background-color: var(--accent-color);
+    border-bottom: solid 2px var(--secondary-color);
+    color: var(--light-color);
+}
+
+#messageContainer div {
+    margin: 0px auto;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#messageContainer div a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+#messageContainer div p {
+    margin: 0px;
+}
+
 /* For medium screens (>=768px) */
 @media (min-width: 768px) {}
 
