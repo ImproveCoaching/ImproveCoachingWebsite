@@ -245,7 +245,7 @@ footer {
     margin-top: auto;
     background-color: var(--secondary-color);
     color: var(--light-color);
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -335,13 +335,25 @@ button {
     color: var(--dark-color);
 }
 
-.footer-info-container {
+.footer-section {
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.footer-bottom p {
+    font-size: 10pt;
+}
+
+.footer-section h4 {
+    margin-bottom: 40px;
 }
 
 .active-nav {
@@ -352,8 +364,13 @@ button {
     padding: 20px;
 }
 
-.footer-info-container p {
-    font-family: 'OpenSans-Bold';
+.footer-section p {
+    margin: 0px;
+}
+
+.footer-section img {
+    width: 24px;
+    height: 24px;
 }
 
 .justify-end {
@@ -660,8 +677,16 @@ input[type="submit"] {
         font-size: 14pt;
     }
 
-    .footer-info-container p {
-        font-size: 10pt !important;
+    .footer-section p {
+        font-size: 12pt !important;
+    }
+
+    footer .row {
+        gap: 20px;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 20px;
     }
 
     form .row {
