@@ -63,13 +63,37 @@ h4 {
 
 h5 {
     font-family: 'OpenSans';
-    color: #333;
+    color: var(--dark-color);
 }
 
 p,
 li {
     font-family: 'Roboto';
     font-size: 14pt;
+}
+
+a {
+    color: var(--dark-color)
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+a:visited {
+    color: var(--dark-color);
+}
+
+footer a {
+    color: var(--light-color);
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+footer a:visited {
+    color: var(--light-color);
 }
 
 header {
@@ -182,6 +206,12 @@ footer {
 
 .text-right {
     text-align: right;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-signature {
@@ -578,6 +608,13 @@ input[type="submit"] {
 
 #messageContainer div p {
     margin: 0px;
+}
+
+.ebook-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
 }
 
 /* For medium screens (>=768px) */

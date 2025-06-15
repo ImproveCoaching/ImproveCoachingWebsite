@@ -56,7 +56,7 @@ adviesDrawer.classList.add('hidden');
 deskundigDrawer.classList.add('hidden');
 
 coachingNav.addEventListener('click', () => {
-    if(coachingNav.classList.contains('active-nav')) {
+    if (coachingNav.classList.contains('active-nav')) {
         contentDrawer.classList.add('hidden');
         coachingDrawer.classList.add('hidden');
         adviesDrawer.classList.add('hidden');
@@ -77,7 +77,7 @@ coachingNav.addEventListener('click', () => {
 });
 
 adviesNav.addEventListener('click', () => {
-    if(adviesNav.classList.contains('active-nav')) {
+    if (adviesNav.classList.contains('active-nav')) {
         contentDrawer.classList.add('hidden');
         coachingDrawer.classList.add('hidden');
         adviesDrawer.classList.add('hidden');
@@ -98,7 +98,7 @@ adviesNav.addEventListener('click', () => {
 });
 
 deskundigNav.addEventListener('click', () => {
-    if(deskundigNav.classList.contains('active-nav')) {
+    if (deskundigNav.classList.contains('active-nav')) {
         contentDrawer.classList.add('hidden');
         coachingDrawer.classList.add('hidden');
         adviesDrawer.classList.add('hidden');
@@ -122,7 +122,7 @@ const pNavContainer = document.getElementById('pNavContainer');
 const navMenuButton = document.getElementById('navMenuButton');
 
 navMenuButton.addEventListener('click', () => {
-    if(pNavContainer.classList.contains('mobile-hidden')) {
+    if (pNavContainer.classList.contains('mobile-hidden')) {
         pNavContainer.classList.remove('mobile-hidden');
     }
     else {
@@ -156,9 +156,9 @@ navMenuButton.addEventListener('click', () => {
 const messageContainer = document.getElementById('messageContainer');
 const searchParams = new URLSearchParams(window.location.search);
 const contactStatus = searchParams.get('status');
-if(contactStatus) {
+if (contactStatus) {
     const messageContent = document.getElementById('messageContainerContent');
-    if(contactStatus === 'success') {
+    if (contactStatus === 'success') {
         messageContent.innerHTML = 'Uw bericht is succesvol verzonden!';
     }
     else {
