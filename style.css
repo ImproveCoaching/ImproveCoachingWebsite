@@ -66,6 +66,13 @@ h5 {
     color: var(--dark-color);
 }
 
+sub {
+    font-family: 'OpenSans';
+    font-style: italic;
+    font-size: 14pt;
+    margin-bottom: 40px;
+}
+
 p,
 li {
     font-family: 'Roboto';
