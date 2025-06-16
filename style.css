@@ -73,6 +73,11 @@ sub {
     margin-bottom: 40px;
 }
 
+.italic {
+    font-family: 'OpenSans';
+    font-style: italic;
+}
+
 p,
 li {
     font-family: 'Roboto';
@@ -622,6 +627,20 @@ input[type="submit"] {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+}
+
+.ebook-content h4{
+    padding-top: 28px;
+}
+
+#Contact .section-banner {
+    border-top: 40px solid #f1b4c6
+}
+
+#Contact .container {
+    border: solid 1px #6ab1aa;
+    padding-top: 20px;
+    background: white;
 }
 
 /* For medium screens (>=768px) */
