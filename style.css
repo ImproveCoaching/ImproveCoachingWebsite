@@ -71,6 +71,7 @@ sub {
     font-style: italic;
     font-size: 14pt;
     margin-bottom: 40px;
+    white-space: nowrap;
 }
 
 .italic {
