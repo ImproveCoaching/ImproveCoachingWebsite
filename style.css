@@ -243,6 +243,11 @@ footer {
     padding: 0px;
 }
 
+#Deskundigheidsbevordering-Drawer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
 .about-subtitle {
     position: relative;
     transform: translateY(-90px);
